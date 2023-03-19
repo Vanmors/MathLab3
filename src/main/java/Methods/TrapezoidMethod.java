@@ -48,8 +48,12 @@ public class TrapezoidMethod implements Method {
             result = step * ((y0 + yn) / 2 + sumY);
             r = Math.abs(I - result);
         }
-        IO io = new IO();
-        io.outputFunctions(result, n, r);
+        if (Double.isNaN(result) || Double.isNaN(I) || Double.isNaN(r) || Double.isNaN(Math.abs(100 * r / ((I + result) / 2)))) {
+            System.out.println("В выбранном интервале присутсвует разрыв первого рода!\n");
+        } else {
+            IO io = new IO();
+            io.outputFunctions(result, n, r);
+        }
     }
 
 }

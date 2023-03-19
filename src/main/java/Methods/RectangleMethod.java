@@ -58,8 +58,12 @@ public class RectangleMethod implements Method {
             r = Math.abs(I - sum);
             aNew = a;
         }
-        IO io = new IO();
-        io.outputFunctions(sum, n, r);
+        if (Double.isNaN(sum) || Double.isNaN(I) || Double.isNaN(r) || Double.isNaN(Math.abs(100 * r / ((I + sum) / 2)))) {
+            System.out.println("В выбранном интервале присутсвует разрыв первого рода!\n");
+        } else {
+            IO io = new IO();
+            io.outputFunctions(sum, n, r);
+        }
     }
 
     public void methodLeft() {
@@ -83,8 +87,12 @@ public class RectangleMethod implements Method {
             r = Math.abs(I - sum);
             aNew = a;
         }
-        IO io = new IO();
-        io.outputFunctions(sum, n, r);
+        if (Double.isNaN(sum) || Double.isNaN(I) || Double.isNaN(r) || Double.isNaN(Math.abs(100 * r / ((I + sum) / 2)))) {
+            System.out.println("В выбранном интервале присутсвует разрыв первого рода!\n");
+        } else {
+            IO io = new IO();
+            io.outputFunctions(sum, n, r);
+        }
     }
 
     public void methodRight() {
@@ -109,7 +117,11 @@ public class RectangleMethod implements Method {
             r = Math.abs(I - sum);
             aNew = a;
         }
-        IO io = new IO();
-        io.outputFunctions(sum, n, r);
+        if (Double.isNaN(sum) || Double.isNaN(I) || Double.isNaN(r) || Double.isNaN(Math.abs(100 * r / ((I + sum) / 2)))) {
+            System.out.println("В выбранном интервале присутсвует разрыв первого рода!\n");
+        } else {
+            IO io = new IO();
+            io.outputFunctions(sum, n, r);
+        }
     }
 }

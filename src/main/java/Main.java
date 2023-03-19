@@ -25,7 +25,7 @@ public class Main {
             System.out.println("Выбирите функицю:\n" +
                     "1: x^2\n" +
                     "2: 1/10*x^4 + 1/5*x^2 -7\n" +
-                    "3: 3 функция");
+                    "3: sin(x) + cos(x)");
             number = scanner.nextInt();
             while (number > 3 || number < 1) {
                 System.out.println("Введите число от 1 до 3");
